@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lizhiduo.synoqrcodedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="read: "
+        android:textSize="25dp"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/open_close"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="onClick"
+        android:text="open"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="onClick"
+        android:text="read"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/testOpen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="onClick"
+        android:text="testOpen"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/ed_time"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="number"
+        android:hint="please set wait time  \nMAX Time is 25500ms -> 25s "
+        />
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:text="getstate"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+
+
+</LinearLayout>
